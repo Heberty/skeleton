@@ -1,0 +1,33 @@
+{
+	"name": "mixinternet/mix-module-config",
+	"type": "kohana-module",
+	"description": "",
+	"keywords": [
+		"php",
+		"Kohana",
+		"Symfony",
+		"Mix Internet"
+	],
+	"homepage": "https://bitbucket.org/mixinternet/mix-module-config",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Luan Oliveira"
+		},
+		{
+			"name": "Gabriel Lau <gabriel@mixinternet.com.br>"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0",
+		"php": ">=5.6"
+	},
+	"extra": {
+		"installer-name": "configuracoes",
+		"installer-paths": {
+			"vendor/{$vendor}/{$name}": [
+				"type:kohana-module"
+			]
+		}
+	}
+}

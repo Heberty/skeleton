@@ -1,0 +1,127 @@
+Icon?
+.DS_Store
+.svn
+.phpintel
+code_coverage
+*~
+*.swp
+*.db
+*.env
+coverage
+kohana_release
+nbproject
+build
+*.phar
+*.log
+ngrok*
+vendor/*
+www/uploads/*
+!.gitkeep
+
+# manually ignore system modules
+modules/admin
+modules/base
+modules/pages
+modules/logger
+modules/users
+modules/migrations
+modules/i18n
+modules/sitemaps
+modules/vitrines
+
+# Sitemaps dinâmicos
+www/_sitemap*.xml
+
+#
+# NodeJS templates
+#
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components/
+
+# Dependency directories
+node_modules/
+
+# Yarn Integrity file
+.yarn-integrity
+
+#
+# Jetbrains
+#
+.idea/
+
+# Created by https://www.gitignore.io/api/eclipse
+
+### Eclipse ###
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
+### Eclipse Patch ###
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Annotation Processing
+.apt_generated
+
+
+# End of https://www.gitignore.io/api/eclipse

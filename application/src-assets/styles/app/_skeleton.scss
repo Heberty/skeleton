@@ -1,0 +1,52 @@
+//
+//== Global Styles structure
+//   html, body, ...
+//
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms;
+}
+
+.body {
+    &__content,
+    &__main {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+    }
+
+    &__main {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+//
+// Hides the vue.js tags
+//
+[v-cloak] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    > * {
+        display: none;
+    }
+
+    &::before {
+        content: "carregando...";
+    }
+}

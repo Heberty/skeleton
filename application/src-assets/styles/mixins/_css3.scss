@@ -1,0 +1,22 @@
+
+/**
+ * @param $size The size (in pixels) to convert to REM equivalient unit
+ * @param $base-size The root size set in html (defaults to 16px)
+ */
+@function rem($size, $base-size: 16px) {
+    $remSize: $size / $base-size;
+    @return #{$remSize}rem;
+}
+
+/**
+ * Fallback mixin to create properties with REM units
+ * with support for older browsers
+ */
+@mixin attr($property, $size) {
+    #{$property}: $size; //Fallback in px
+    #{$property}: rem($size);
+}
+
+@mixin font-size($size) {
+    @include attr(font-size, $size);
+}

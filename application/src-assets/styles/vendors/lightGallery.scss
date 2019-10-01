@@ -1,0 +1,28 @@
+// z-index
+$zindex-outer: 91050;
+$zindex-progressbar: 91083;
+$zindex-controls: 91080;
+$zindex-toolbar: 91082;
+$zindex-subhtml: 91080;
+$zindex-thumbnail: 91080;
+$zindex-pager: 91080;
+$zindex-playbutton: 91080;
+$zindex-item: 91060;
+$zindex-backdrop: 91040;
+
+// Core variables and mixins
+@import "~lightgallery.js/src/sass/lightgallery";
+// @import "~lightgallery.js/src/sass/lg-variables";
+// @import "~lightgallery.js/src/sass/lg-mixins";
+// @import "~lightgallery.js/src/sass/lg-fonts";
+// @import "~lightgallery.js/src/sass/lg-theme-default";
+// @import "~lightgallery.js/src/sass/lg-thumbnail";
+// @import "~lightgallery.js/src/sass/lg-video";
+// @import "~lightgallery.js/src/sass/lg-zoom";
+// @import "~lightgallery.js/src/sass/lg-fullscreen";
+// @import "~lightgallery.js/src/sass/lg-autoplay";
+//@import "~lightgallery.js/src/sass/lg-pager";
+//@import "~lightgallery.js/src/sass/lg-share";
+
+// Core
+// @import "~lightgallery.js/src/sass/lg-core";

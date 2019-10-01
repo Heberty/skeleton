@@ -1,0 +1,23 @@
+.map {
+    @extend .embed-responsive;
+    @extend .embed-responsive-21by9;
+
+    background: #e5e3df;
+    font-size: 3em;
+    &:after {
+        content: $fa-var-map-marker;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        color: #ea4335;
+        @include fa-icon();
+    }
+
+    .canvas_map {
+        @extend .embed-responsive-item;
+        z-index: 2;
+    }
+}

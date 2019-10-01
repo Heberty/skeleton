@@ -1,0 +1,85 @@
+/* ----------------------
+ * Paginations and pager
+ * ----------------------*/
+
+.pagination {
+    align-items: center;
+    justify-content: center;
+    @include margin-y(2rem);
+
+    &-wrapper {
+        margin-top: auto;
+    }
+
+    > li {
+        @extend .page-item;
+
+        &:first-child,
+        &:last-child {
+            .page-link {
+                @include border-radius(0);
+            }
+        }
+
+        &.active .page-link {
+            font-weight  : bold;
+            color        : $primary;
+            background   : $white;
+        }
+
+        &.number{
+            &:first-child {
+                .page-link {
+                    border-left: 0;
+                }
+            }
+
+            &:last-child {
+                .page-link {
+                    border-right: 0;
+                }
+            }
+
+            .page-link {
+                @extend .page-link;
+                border : 2px solid $border-color;
+                border-left: 0;
+                border-top: 0;
+                border-bottom: 0;
+                color  : $body-color;
+                @include padding-y(0);
+
+                @include hover-focus {
+                    color : $primary;
+                }
+            }
+        }
+
+        &.previous {
+            margin-right: 3rem;
+        }
+
+        &.next {
+            margin-left: 3rem;
+        }
+
+        &.previous,
+        &.next {
+            .page-link {
+                border-radius: 100%;
+                padding: .5rem;
+                background: $primary;
+                border-color : $primary;
+                color: white;
+                text-align: center;
+                @include size(40px);
+
+                @include hover-focus {
+                    border-color : $primary;
+                    background   : $white;
+                    color        : $primary;
+                }
+            }
+        }
+    }
+}

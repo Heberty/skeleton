@@ -1,0 +1,12 @@
+//
+//= Buttons
+//
+
+.btn-wide {
+	@include padding-x(rem(36px));
+}
+
+.btn-thin {
+	@include font-size(14px);
+}
+

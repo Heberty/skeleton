@@ -1,0 +1,55 @@
+// mixins for mobile responsiveness
+
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+@mixin img-responsive-fit($display: block) {
+    @include img-fluid();
+
+    width: 100%; // force all images to fit the parent container
+}
+
+@mixin aspect-ratio-container($width, $height, $container-width: 100%) {
+    width: $container-width;
+    padding-top: ($height / $width) * $container-width;
+    height: 0;
+}
+
+@mixin aspect-ratio($width, $height, $child: '.content') {
+    position: relative;
+
+    &::before{
+        display: block;
+        content: " ";
+        @include aspect-ratio-container($width, $height);
+    }
+
+    > #{$child} {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@mixin aspect-ratio-fixed($height, $child: '.content') {
+    position: relative;
+
+    &::before{
+        display: block;
+        content: " ";
+        width: 100%;
+        height: 0;
+        padding-top: $height;
+    }
+
+    > #{$child} {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+    }
+}
