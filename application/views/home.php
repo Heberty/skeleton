@@ -5,11 +5,12 @@
 <div class="route-page">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 d-flex justify-content-betwee align-items-center">
 				<ul>
 					<li><h1>A casa</h1></li>
 					<li><h2>fale conosco</h2></li>
 				</ul>
+				<img src="<?= $this->url('/assets/img/boneco.png') ?>" alt="">
 			</div>
 		</div>
 	</div>

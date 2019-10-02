@@ -1,12 +1,22 @@
 .route-page {
 	background-color: #eee;
 	width: 100%;
-	background-image: url('~@img/logo.png');
-	background-repeat: no-repeat;
-	background-position: 90% 50px;
-	background-size: 80px;
 	margin-bottom: 50px;
 	padding: 60px 0;
+	overflow: hidden;
+
+	img {
+		width: 120px;
+		margin-left: auto;
+		position: absolute;
+		right: 0px;
+		bottom: -90px;
+		display: none;
+
+		@media(min-width: 576px) {
+			display: block;
+		}
+	}
 
 	@media(min-width: 576px) {
 		background-position: 90% 10px;
