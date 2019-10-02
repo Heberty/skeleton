@@ -1,10 +1,24 @@
-.section-equipe {
+.section-partner {
 
-	@media(min-width: 992px) {
-		margin-bottom: 150px;
+	.title-partner {
+		@extend .text-center;
+		
+		margin-bottom: 30px;
+
+		h3 {
+			@extend .openSansBold;
+
+			font-size: 24px;
+			color: $gray-dk;
+			text-transform: uppercase;
+
+			span {
+				@extend .openSansRegular;
+			}
+		}
 	}
 	
-	.list-equipe {
+	.list-partner {
 		@extend .d-flex, .justify-content-between, .list-unstyled, .text-center, .flex-wrap;
 
 		li {
@@ -22,20 +36,11 @@
 				margin-bottom: 0;
 			}
 
-			.name-equipe,
-			.email-equipe {
-				font: 18px;
-				color: $gray-md;
-			}
-			
-			.name-equipe {
-				@extend .openSansBold;
+			.logo-partner {
 
-				font-style: italic;	
-			}
-
-			.email-equipe {
-				@extend .openSansRegular;
+				img {
+					width: 100px;
+				}
 			}
 		}
 

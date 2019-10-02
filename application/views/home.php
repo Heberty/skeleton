@@ -2,19 +2,20 @@
     \Helper\LayoutHelper::setInterna(false);
 ?>
 
-<section class="section-contact" id="contact">
-	<div class="route-page">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<ul>
-						<li><h1>A casa</h1></li>
-						<li><h2>fale conosco</h2></li>
-					</ul>
-				</div>
+<div class="route-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul>
+					<li><h1>A casa</h1></li>
+					<li><h2>fale conosco</h2></li>
+				</ul>
 			</div>
 		</div>
 	</div>
+</div>
+
+<section class="section-contact" id="contato">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -78,7 +79,7 @@
 		</div>
 	</div>
 </div>
-<section class="section-equipe">
+<section class="section-equipe" id="equipe">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -99,6 +100,27 @@
 						<strong class="name-equipe">Presidente</strong>
 						<a class="email-equipe" href="mailto:diretoria@durvalpaiva.org.br">diretoria@durvalpaiva.org.br</a>
 					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-partner" id="parceiros">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title-partner">
+					<h3><span>Nossos</span> parceiros</h3>
+				</div>
+				<ul class="list-partner">
+					<?php for($i=0; $i<8; $i++): ?>
+					<li>
+						<a class="logo-partner" href="javascript:;">
+							<img src="<?= $this->url('/assets/img/98fm.png') ?>" alt="">
+						</a>
+					</li>
+					<?php endfor; ?>
 				</ul>
 			</div>
 		</div>
