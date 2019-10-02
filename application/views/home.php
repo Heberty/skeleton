@@ -71,3 +71,36 @@
 		</form>
 	</div>
 </section>
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div class="diviser-site"></div>
+		</div>
+	</div>
+</div>
+<section class="section-equipe">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul class="list-equipe">
+					<li>
+						<strong class="name-equipe">Presidente</strong>
+						<a class="email-equipe" href="mailto:diretoria@durvalpaiva.org.br">diretoria@durvalpaiva.org.br</a>
+					</li>
+					<li>
+						<strong class="name-equipe">Presidente</strong>
+						<a class="email-equipe" href="mailto:diretoria@durvalpaiva.org.br">diretoria@durvalpaiva.org.br</a>
+					</li>
+					<li>
+						<strong class="name-equipe">Presidente</strong>
+						<a class="email-equipe" href="mailto:diretoria@durvalpaiva.org.br">diretoria@durvalpaiva.org.br</a>
+					</li>
+					<li>
+						<strong class="name-equipe">Presidente</strong>
+						<a class="email-equipe" href="mailto:diretoria@durvalpaiva.org.br">diretoria@durvalpaiva.org.br</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

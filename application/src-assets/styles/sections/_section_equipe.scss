@@ -1,0 +1,39 @@
+.section-equipe {
+	
+	.list-equipe {
+		@extend .d-flex, .justify-content-between, .list-unstyled, .text-center, .flex-wrap;
+
+		li {
+			@extend .d-flex, .flex-column;
+
+			width: 100%;
+			margin-bottom: 30px;
+
+			@media(min-width: 576px) {
+				width: 50%;
+			}
+
+			@media(min-width: 992px) {
+				width: unset;
+				margin-bottom: 0;
+			}
+
+			.name-equipe,
+			.email-equipe {
+				font: 18px;
+				color: $gray-md;
+			}
+			
+			.name-equipe {
+				@extend .openSansBold;
+
+				font-style: italic;	
+			}
+
+			.email-equipe {
+				@extend .openSansRegular;
+			}
+		}
+
+	}
+}
