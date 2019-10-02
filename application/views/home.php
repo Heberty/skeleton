@@ -26,32 +26,32 @@
 				</div>
 			</div>
 		</div>
-		<form action="/enviar" class="form-site row" method="post">
+		<form action="/contato/submit" class="form-site row" method="post">
 			<div class="col-12 col-lg-7">
 				<div class="row">
 					<div class="form-group col-12">
 						<label for="">Nome*</label>
-						<input type="text" class="form-control" name="nome">
+						<input type="text" class="form-control" name="name" max="150">
 					</div>
 					<div class="form-group col-6 col-lg-6">
 						<label for="">Email*</label>
-						<input type="text" class="form-control" name="email">
+						<input type="text" class="form-control" name="email" max="150">
 					</div>
 					<div class="form-group col-6 col-lg-4">
 						<label for="">Telefone</label>
-						<input type="text" class="form-control sp-celphones" name="telefone">
+						<input type="text" class="form-control sp-celphones" name="phone" max="15">
 					</div>
 					<div class="form-group col-2 col-lg-2">
 						<label for="">UF</label>
-						<input type="text" class="form-control" name="uf">
+						<input type="text" class="form-control" name="uf" max="2">
 					</div>
 					<div class="form-group col-6 col-lg-6">
 						<label for="">Cidade</label>
-						<input type="text" class="form-control" name="cidade">
+						<input type="text" class="form-control" name="city">
 					</div>
 					<div class="form-group col-6 col-lg-6">
 						<label for="">Setor</label>
-						<input type="text" class="form-control" name="setor">
+						<input type="text" class="form-control" name="sector">
 					</div>
 				</div>
 			</div>
@@ -59,7 +59,7 @@
 				<div class="row">
 					<div class="form-group col-12">
 						<label for="">Mensagem*</label>
-						<textarea id="" class="form-control" name="mensagem"></textarea>
+						<textarea id="" class="form-control" name="content"></textarea>
 					</div>
 				</div>
 			</div>

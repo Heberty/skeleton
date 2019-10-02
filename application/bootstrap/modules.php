@@ -13,6 +13,7 @@ return [
     'logger' => MODPATH . 'logger',
     'pages' => MODPATH . 'pages',
     'sitemaps' => MODPATH . 'sitemaps',
+    'contacts' => MODPATH . 'contacts',
 
     // Local modules
     'fotos' => MODPATH . 'fotos',
