@@ -1,6 +1,10 @@
 //
 //== Root stylesheet
 //
+// Communs
+@import 'communs/fonts';
+@import 'communs/variables';
+@import 'communs/base';
 
 // Variables
 @import 'variables/index';
@@ -27,9 +31,6 @@
 // Blocks
 @import 'blocks/header';
 
-// Communs
-@import 'communs/fonts';
-@import 'communs/variables';
 
 // Sections
 @import 'sections/section_contact';

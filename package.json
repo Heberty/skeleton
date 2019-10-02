@@ -21,6 +21,7 @@
     "dependencies": {
         "@babel/runtime": "^7.1.5",
         "axios": "^0.18.0",
+        "bigslide": "^0.12.1",
         "bootstrap": "^4.1.1",
         "bootstrap-vue": "^2.0.0-rc.11",
         "clip-one": "git+https://bitbucket.org/mixinternet/mix-clip-one.git#1.5.4",

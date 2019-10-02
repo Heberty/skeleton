@@ -2,3 +2,14 @@
 
 $gray-md: #999999;
 $orange: #ff6400;
+$yellow: #f6ee33;
+$yellow-bd: #e0c100;
+
+// Grid
+
+$container-max-widths: (
+  sm: 720px,
+  md: 960px,
+  lg: 1140px,
+  xl: 1350px
+);

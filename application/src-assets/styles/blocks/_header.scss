@@ -1,51 +1,31 @@
-.header-site {
-	@extend .d-flex;
-
-	.logo {
-
-		img {
-			width: 200px;
-		}
-	}
+.header-desktop {
+	background-image: linear-gradient(90deg, #fff 50%, $yellow 50%);
 
 	.nav-site {
-		@extend .d-flex;
+		@extend .d-flex, .align-items-center;
 
-		background-color: yellow;
-		width: 100%;
-		padding: 30px;
+		background-color: $yellow;
+		padding: 10px 20px;
+
+		@media(min-width: 1200px) {
+			padding: 20px 30px;
+		}
+
+		@media(min-width: 1600px) {
+			padding: 30px;
+		}
 
 		.nav-top {
 			@extend .d-flex, .justify-content-between, .align-items-center;
 
-			.box-language {
-				ul {
-					@extend .d-flex, .list-unstyled;
-
-					margin-bottom: 0;
-
-					li {
-						margin-right: 10px;
-
-						&:last-child {
-							margin-right: 0;
-						}
-
-						a {
-							width: 30px;
-							height: 30px;
-							border-radius: 50%;
-							overflow: hidden;
-							display: inline-block;
-
-							img {
-								width: 60px;
-							}
-						}
-					}
-				}
+			@media(min-width: 992px) {
+				margin-bottom: 20px;
 			}
 			
+			@media(min-width: 1600px) {
+				margin-bottom: 30px;
+			}
+
 			.box-network {
 				ul {
 					@extend .d-flex, .list-unstyled;
@@ -70,57 +50,178 @@
 			}
 		}
 
-		.diviser-nav {
-			height: 1px;
-			width: 100%;
-			background-color: #bdbdbd;
-			margin: 20px 0;
+		.nav-bottom {
+
+		}
+	}
+}
+
+.header-mobile {
+	@extend .d-flex, .align-items-center, .justify-content-between;
+
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-color: #fff;
+	padding: 0 15px;
+	box-shadow: 0 0 6px 3px rgba(0,0,0,.3);
+
+	.menu-link {
+		font-size: 50px;
+		color: $yellow;
+	}
+
+	.panel {
+		width: 100%;
+		height: 100%;
+		background-color: $yellow;
+		position: fixed;
+		right: -100%;
+		padding: 0 30px;
+
+		.menu-link {
+			@extend .d-flex, .justify-content-end;
+
+			font-size: 50px;
+			color: #fff;
+		}
+	}
+}
+
+.header-site {
+
+	.logo {
+		@extend .d-flex, .align-items-center, .justify-content-center;
+
+		@media(min-width: 992px) {
+			margin-right: 20px;
+			margin-left: auto;
 		}
 
-		.nav-bottom {
-			
-			.nav-menu {
+		img {
+			width: 80px;
 
-				ul {
-					@extend .d-flex, .list-unstyled;
+			@media(min-width: 992px) {
+				width: 120px;
+			}
 
-					li {
-						margin-right: 10px;
+			@media(min-width: 1200px) {
+				width: 110px;
+			}
 
-						a {
+			@media(min-width: 1600px) {
+				width: 200px;
+			}
+		}
+	}
+	
+	.box-language {
+		ul {
+			@extend .d-flex, .list-unstyled, .flex-row, .justify-content-end;
 
-							text-transform: uppercase;
-							font-size: 18px;
-							color: #000;
-							text-decoration: none;
+			margin-bottom: 0;
 
-							&:hover {
-								color: lighten(#000, 10%);
-							}
-						}
+			li {
+				margin-right: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					overflow: hidden;
+					display: inline-block;
+
+					img {
+						width: 60px;
 					}
 				}
 			}
 		}
+	}
+			
+	.nav-menu {
+		
+		ul.list-menu {
+			@extend .d-flex, .flex-column, .flex-lg-row, .list-unstyled, .align-items-end, .align-items-lg-start;
 
-		.btn-doe {
+			border-top: 1px solid $yellow-bd;
+			padding-top: 20px;
+			margin-bottom: 0;
 
-			background-color: red;
-			border-radius: 10px;
-			text-transform: uppercase;
-			color: #fff;
-			padding: 40px;
-			font-size: 22px;
-			text-decoration: none;
+			li {
+				margin-bottom: 30px;
+
+				@media(min-width: 992px) {
+					margin-right: 8px;
+					margin-bottom: 0;
+				}
+
+				a {
+
+					text-transform: uppercase;
+					font-size: 18px;
+					color: #000;
+					text-decoration: none;
+					padding-top: 22px;
+
+					@media(min-width: 992px) {
+						font-size: 12px;
+					}
+
+					@media(min-width: 1200px) {
+						font-size: 16px;
+					}
+
+					&:hover {
+						color: lighten(#000, 20%);
+						border-top: 1px solid #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.btn-doe {
+
+		background-color: red;
+		border-radius: 10px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 16px;
+		text-decoration: none;
+		width: 100%;
+		padding: 20px;
+		display: inline-table;
+		white-space: nowrap;
+		margin-left: 10px;
+
+		@media(min-width: 992px) {
+			width: unset;
+			padding: 20px 12px;
+		}
+
+		@media(min-width: 1200px) {
+			font-size: 15px;
 			margin-left: 30px;
+		}
 
-			img {
-				width: 20px;
-			}
+		@media(min-width: 1600px) {
+			padding: 35px;
+			font-size: 18px;
+		}
 
-			&:hover {
-				background-color: darken(red, 10%);
-			}
+		img {
+			width: 20px;
+		}
+
+		&:hover {
+			background-color: darken(red, 10%);
 		}
 	}
 }
