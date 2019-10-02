@@ -1,0 +1,165 @@
+.footer-site {
+
+	.menu-footer {
+		@extend .list-unstyled;
+
+		li {
+			margin-bottom: 5px;
+
+			a {
+
+				@extend .openSansRegular;
+
+				font-size: 14px;
+				color: $gray-md;
+			}
+		}
+		
+		.title-list {
+			margin-bottom: 10px;
+		}
+
+		.title-list,
+		strong {
+			@extend .openSansBold;
+
+			color: $gray-dk;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+
+	.box-newsletter {
+		background-image: linear-gradient(160deg, $yellow, #f7941d);
+		padding: 20px 30px;
+		margin-bottom: 20px;
+
+		.title-newsletter {
+			@extend .text-center;
+
+			margin-bottom: 10px;
+
+			h3 {
+				@extend .openSansBold;
+
+				font-size: 18px;
+				color: $gray-dk;
+				text-transform: uppercase;
+
+				span {
+					@extend .openSansRegular;
+				}
+			}
+		}
+
+		.form-newsletter {
+			@extend .d-flex;
+
+			.form-group {
+				margin-bottom: 20px;
+
+				@media(min-width: 576px) {
+					margin-bottom: 0;
+				}
+
+				.form-control {
+					border: none;
+					border-radius: 4px;
+					color: $gray-md;
+					height: 40px;
+					width: 100%;
+				}
+			}
+
+			.btn-newsletter {
+				@extend .openSansBold;
+
+				background-color: transparent;
+				border: 2px solid #fff;
+				border-radius: 5px;
+				color: #fff;
+				text-transform: uppercase;
+				height: 40px;
+				width: 100%;
+			}
+		}
+	}
+
+	.box-adress {
+		@extend .d-flex, .flex-column;
+
+		margin-bottom: 30px;
+
+		.title-adress {
+			@extend .openSansBold;
+
+			font-size: 16px;
+			color: $gray-dk;
+		}
+
+		.adress-itself,
+		.email-adress {
+			@extend .openSansRegular;
+
+			font-size: 14px;
+			color: $gray-md;
+			text-decoration: none;
+		}
+	}
+
+	.box-network {
+
+		ul {
+			@extend .list-unstyled, .d-flex, .align-items-center;
+
+			li {
+				margin-right: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					
+					img {
+						width: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.box-phone {
+		background-image: linear-gradient(160deg, $yellow, #f7941d);
+		display: inline-block;
+		border-radius: 6px;
+		padding: 10px 20px;
+		margin-bottom: 30px;
+
+		&:hover {
+			background-image: linear-gradient(-160deg, $yellow, #f7941d);
+		}
+
+		.phone {
+			text-decoration: none;
+			
+			.number-phone,
+			.ligar {
+				@extend .openSansBold;
+				font-size: 16px;
+			}
+
+			.number-phone {
+				color: $gray-dk;
+			}
+
+			.ligar {
+				color: #fff;
+			}
+		}
+	}
+
+	.box-map {
+		margin-bottom: 30px;
+	}
+}
