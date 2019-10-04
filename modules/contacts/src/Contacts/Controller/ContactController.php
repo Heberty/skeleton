@@ -17,51 +17,31 @@ class ContactController extends BaseController
     }
 
     public function submitAction()
-    {   
-        try {
-            $request = $this->getRequest()->request->all();
+    { 
 
-            // $teste = $this->getRequest()->request->all();
-            // var_dump($teste);
-            
-            if ()
+        $model = new Contact;
 
-            if (empty($request)) {
-                throw new \Exception('Requisição inválida');
-            }
+        $form = $this->getRequest()->isMethod('post');
+        $content = $this->getRequest()->request->all();
+        $errors = [];
 
-            $model = new Contact;
-            $model->populateFromArray($request);
-
-
+        if($form) {
+            $model->populateFromArray($content);
             if ($model->validate()) {
-                if (!$model->save()) {
-                    throw new \Exception('Não foi possível salvar a mensagem');
-                }
+                $model->save();
 
-                return new JsonResponse(
-                    [
-                        'message' => 'Contato enviado com sucesso'
-                    ],
-                    200
-                );
-            }
+                $this->getUiManager()->setPageTitle(__('Contato enviado'));
+                $this->addSuccessFlash('Contato enviado com sucesso.');
+                return $this->routeRedirect('home');
+            }  
 
-            // TODO: retornar lista de erros de validação
+            $this->getUiManager()->setPageTitle(__('Erro no envio'));
+            $this->addErrorFlash('Verifique os erros do formulário');
+            $errors = $model->getErrors();
 
-            return new JsonResponse(
-                [
-                    'error' => 'Erro no preenchimento do formulário.'
-                ],
-                422
-            );
-        } catch (\Exception $exception) {
-            return new JsonResponse(
-                [
-                    'error' => $exception->getMessage()
-                ],
-                400
-            );
         }
+
+        return $this->renderResponse('home', ['errors' => $errors]);
+
     }
 }

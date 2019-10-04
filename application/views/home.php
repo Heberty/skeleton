@@ -2,6 +2,17 @@
     \Helper\LayoutHelper::setInterna(false);
 ?>
 
+<?php if(isset($errors)): ?>
+	<?php foreach ($errors as $erro): ?>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="alert alert-danger alert-dismissible fade in show"><?= $erro ?></div>
+				</div>
+			</div>
+		</div>
+	<?php endforeach ?>
+<?php endif; ?>
 <div class="route-page">
 	<div class="container">
 		<div class="row">
@@ -26,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-		<form action="/contato/submit" class="form-site row" method="post">
+		<form action="contato/submit" class="form-site row" method="post">
 			<div class="col-12 col-lg-7">
 				<div class="row">
 					<div class="form-group col-12">
