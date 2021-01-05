@@ -20,7 +20,7 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.1.5",
-        "axios": "^0.18.0",
+        "axios": "^0.21.1",
         "bigslide": "^0.12.1",
         "bootstrap": "^4.1.1",
         "bootstrap-vue": "^2.0.0-rc.11",
