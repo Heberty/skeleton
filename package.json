@@ -35,7 +35,7 @@
         "lg-video": "^1.2.2",
         "lg-zoom": "^1.1.0",
         "lightgallery": "^1.6.11",
-        "lodash": "^4.17.10",
+        "lodash": "^4.17.21",
         "vanilla-lazyload": "^10.4.2",
         "vee-validate": "^2.0.9",
         "vue": "^2.5.16",
