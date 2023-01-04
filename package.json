@@ -73,7 +73,7 @@
         "file-loader": "^1.1.11",
         "glob": "^7.1.2",
         "html-webpack-externals-plugin": "^3.8.0",
-        "html-webpack-plugin": "^3.2.0",
+        "html-webpack-plugin": "^5.5.0",
         "image-webpack-loader": "^4.4.0",
         "imagemin-webpack-plugin": "^2.1.5",
         "jshint-loader": "^0.8.4",
